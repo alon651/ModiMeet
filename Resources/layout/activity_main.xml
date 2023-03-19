@@ -1,7 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-</RelativeLayout>
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+      <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello!"
+            android:gravity="center_horizontal"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill the following"
+            android:gravity="center_horizontal"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="to sign up:"
+            android:gravity="center_horizontal"
+            android:textSize="25dp"/>
+        
+        <EditText                
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"/>
+
+        <EditText                
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText                
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_gravity="center_horizontal"/>
+        
+        <EditText                
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:hint="PassWord"
+            android:layout_gravity="center_horizontal"/>
+                
+        <EditText                
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="gender:"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"/>
+
+
+        </LinearLayout>      
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"/>
+</LinearLayout>
