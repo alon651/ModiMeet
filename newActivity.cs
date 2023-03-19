@@ -20,6 +20,7 @@ namespace ModiMeet
 
             // Create your application here
             int x = 10;
+            int y = 10;
         }
     }
 }
